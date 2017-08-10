@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>ReadIt</title>
+</head>
+<body>
+
+<div id="navbar">
+	<header>ReadIt</header>
+</div>
+
+<div class="container">
+	<div class="pull-left" id="subreddits">
+		<a href="#"><div class="subreddit">Cars</div></a>
+		<a href="#"><div class="subreddit">Planes</div></a>
+		<a href="#"><div class="subreddit">Trains</div></a>
+		<a href="#"><div class="subreddit">Automobiles</div></a>
+		<a href="#"><div class="subreddit">Ducks</div></a>
+	</div>
+
+	<div class="pull-right" id="posts" ng-app="redApp" ng-controller="postCtrl">
+		<post ng-repeat="post in posts"></post>
+	</div>
+</div>
+
+<!-- <input type="text" name="ghost"> -->
+</body>
+
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="redService.js"></script>
+</html>

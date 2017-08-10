@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Source+Sans+Pro|Spectral');
+
+
+body {
+	background-color: gray;
+	font-family: 'Spectral', serif;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+	display: block;
+	margin:1px;
+}
+
+#navbar {
+	height: 100px;
+	background-color: white;
+	padding: 20px;
+}
+
+header {
+	font-size: 3em;
+	color: #FF7500;
+	font-family: 'Lobster', cursive;
+}
+
+.container {
+	/*width: 1500px;*/
+}
+
+#subreddits {
+	width: 20%;
+	height:500px;
+	text-align: center;
+	margin-top: 3px
+}
+
+.subreddit {
+	height: 50px;
+	width: 100%;
+	margin: 2px 0px;
+	border: 1px solid #FF7500;
+	background-color: white;
+	font-size: 1.8em;
+	line-height: 50px;
+	border-radius: 6px 0px 0px 6px;
+}
+
+.subreddit:hover{
+	transform: scale(1.02);
+}
+
+#posts {
+	width: 80%;
+	min-height: 500px;
+	background-color: white;
+	padding:5px;
+	margin-top: 3px;
+}
+.post {
+	position: relative;
+	width: 100%;
+	height:100px;
+	padding:10px;
+	border: 1px solid #FF7500;
+	border-radius:6px;
+	margin-bottom:3px;
+}
+
+.post h3 {
+	margin-top: 0px;
+}
+
+.post-content {
+	width: 85%;
+	overflow: hidden;
+}
+
+.assoc {
+	height: 100px;
+	width:2%;
+	background-color: #FF7500;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	border-radius: 0px 6px 6px 0px;
+}
+
+.author {
+	font-size: 0.7em;
+}
+
+/*input {
+	width: 50px;
+	border-radius: 4px;
+	border: 1pa solid black;
+	border-left: 1px solid blue;
+}
+
+input:focus {
+	display: hidden;
+}*/
